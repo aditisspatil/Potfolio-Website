@@ -1,13 +1,9 @@
 /*
-2f2519 db   47, 37, 25
-96501e b	150, 80, 30
-c87941 o-o  200, 121, 65	Selectable Text
-f9b384 o-s  249, 179, 132	Block Text
-f1e3cb ew 	241, 227, 203   Heading
+Background	Brown	4a3429
+Heading 	Peach	f1e3cb
+Heading		Orange	ff8b38
+Background	Orange	b55c1b
 
-bg 4a3429
-40330f 64, 51, 15
-4f4015 79, 64, 21
 */
 
 /* ------------------------------------------ */
@@ -76,7 +72,7 @@ h2 {
 h3 {
 	margin-top: 10px;
 	margin-bottom: 15px;
-	color: #c87941;
+	color: #ff8b38;
 	font-weight: 300;
 	font-size: 110%;
 	word-spacing: 2px;
@@ -86,7 +82,7 @@ h3 {
 h2:after {
 	display: block;
 	height:2px;
-	background-color: #c87941;
+	background-color: #ff8b38;
 	content:" ";
 	width: 100px;
 	margin: 0 auto;
@@ -111,12 +107,12 @@ h2:after {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 200px;
-	color: #c87941;
+	color: #ff8b38;
 }
 
 .btn-bordered:link,
 .btn-bordered:visited {
-	border: 1px solid #c87941;
+	border: 1px solid #ff8b38;
 }
 
 
@@ -163,13 +159,13 @@ header {
 }
 
 .main-nav li a:hover {
-	border-bottom: 2px solid #c87941;
-	color: #c87941;
+	border-bottom: 2px solid #ff8b38;
+	color: #ff8b38;
 	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
 }
 
 .main-nav li a:active {
-	border-bottom: 2px solid #c87941;
+	border-bottom: 2px solid #ff8b38;
 	background-color: rgba(241, 227, 203, 0.1);
 	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
 }
@@ -197,7 +193,7 @@ header {
 
 .progress-filled {
 	padding: 0;
-	background-color: #96501e;
+	background-color: #b55c1b;
 	height: 20px;
 	width: 150px;
 	border-radius: 5px;
