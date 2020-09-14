@@ -1,5 +1,10 @@
 /*
+
+Background	Green	153a1b
+Background	Blue	181a43
 Background	Brown	4a3429
+Background	Purple	2e1345
+
 Heading 	Peach	f1e3cb
 Heading		Orange	ff8b38
 Background	Orange	b55c1b
@@ -36,7 +41,6 @@ html {
 }
 
 section {
-	background: #4a3429;
 	background-size: auto;
 	background-position: center;
 	height: 100vh;
@@ -170,9 +174,33 @@ header {
 	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
 }
 
-/* ------ SECTIONS ----- */
 
-.box-container: {
+/* ------------------------------------------ */
+/* SECTIONS ABOUT */
+/* ------------------------------------------ */
+
+.section-about {
+	background-color: #153a1b;
+}
+
+/* ------------------------------------------ */
+/* SECTIONS PORTFOLIO */
+/* ------------------------------------------ */
+
+.section-portfolio {
+	background-color: #181a43;
+}
+
+
+/* ------------------------------------------ */
+/* SECTIONS TECHNOLOGIES */
+/* ------------------------------------------ */
+
+.section-technologies {
+	background: #4a3429;
+}
+
+.tech-container: {
 	text-align: center;
 }
 
@@ -197,4 +225,13 @@ header {
 	height: 20px;
 	width: 150px;
 	border-radius: 5px;
+}
+
+
+/* ------------------------------------------ */
+/* SECTIONS CONTACT */
+/* ------------------------------------------ */
+
+.section-contact {
+	background-color: #2e1345;
 }
