@@ -200,15 +200,20 @@ header {
 	background: #4a3429;
 }
 
-.tech-container: {
+.parent-container {
 	text-align: center;
 }
 
-.tech-box {
+.child-container {
 	display: inline-block;
-	text-align: center;
-	padding: 30px 0px;
 	margin: 0 auto;
+	padding: 1% 1%;
+}
+
+.tech-box {
+	padding: 10% 1%;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.01));
 }
 
 .progress-bar {
@@ -234,4 +239,7 @@ header {
 
 .section-contact {
 	background-color: #2e1345;
+}
+
+.social-links {
 }
