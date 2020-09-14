@@ -1,0 +1,204 @@
+/*
+2f2519 db   47, 37, 25
+96501e b	150, 80, 30
+c87941 o-o  200, 121, 65	Selectable Text
+f9b384 o-s  249, 179, 132	Block Text
+f1e3cb ew 	241, 227, 203   Heading
+
+bg 4a3429
+40330f 64, 51, 15
+4f4015 79, 64, 21
+*/
+
+/* ------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------ */
+
+*  {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	background-color: transparent;
+}
+
+html {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+}
+
+
+/* ------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------ */
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto 0 auto;
+}
+
+section {
+	background: #4a3429;
+	background-size: auto;
+	background-position: center;
+	height: 100vh;
+	padding: 80px 0;
+}
+
+/* ----- HEADINGS ----- */
+h1,
+h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #f1e3cb;
+	font-weight: 300;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 200%;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 150%;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 3 px;
+}
+
+h3 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #c87941;
+	font-weight: 300;
+	font-size: 110%;
+	word-spacing: 2px;
+	text-align: center;
+}
+
+h2:after {
+	display: block;
+	height:2px;
+	background-color: #c87941;
+	content:" ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/* ----- BUTTONS ----- */
+.btn:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: background-color 0.2s;
+}
+
+.btn:active {
+	background-color: rgba(241, 227, 203, 0.1);
+	transition: background-color 0.2s;
+}
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	color: #c87941;
+}
+
+.btn-bordered:link,
+.btn-bordered:visited {
+	border: 1px solid #c87941;
+}
+
+
+/* ------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------ */
+
+header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.intro-text-box {
+	position: absolute;
+	width: 1140px;
+	top: 40%;
+	left: 10%;
+}
+
+/* ------ NAVIGATION ----- */
+
+.main-nav {
+	float: left;
+	list-style: none;	
+	margin-top: 40px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 8px 10px;
+	color: #f1e3cb;
+	text-decoration: none;
+	font-size: 100%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+
+.main-nav li a:hover {
+	border-bottom: 2px solid #c87941;
+	color: #c87941;
+	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
+}
+
+.main-nav li a:active {
+	border-bottom: 2px solid #c87941;
+	background-color: rgba(241, 227, 203, 0.1);
+	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
+}
+
+/* ------ SECTIONS ----- */
+
+.box-container: {
+	text-align: center;
+}
+
+.tech-box {
+	display: inline-block;
+	text-align: center;
+	padding: 30px 0px;
+	margin: 0 auto;
+}
+
+.progress-bar {
+	margin: 15px auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	height: 20px;
+	width: 150px;
+	border-radius: 5px;
+}
+
+.progress-filled {
+	padding: 0;
+	background-color: #96501e;
+	height: 20px;
+	width: 150px;
+	border-radius: 5px;
+}
