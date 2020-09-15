@@ -9,6 +9,8 @@ Heading 	Peach	f1e3cb
 Heading		Orange	ff8b38
 Background	Orange	b55c1b
 
+outline: solid #f00 1px !important;
+
 */
 
 /* ------------------------------------------ */
@@ -20,14 +22,17 @@ Background	Orange	b55c1b
 	padding:0;
 	box-sizing: border-box;
 	background-color: transparent;
+	
 }
 
-html {
+html,
+body {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Lato', 'Arial', 'sans-serif';
 	font-weight: 300;
 	font-size: 20px;
+	overflow-x: hidden;
 }
 
 
@@ -40,14 +45,10 @@ html {
 	margin: 0 auto 0 auto;
 }
 
-.parent-container {
-	text-align: center;
-}
-
 section {
-	background-size: auto;
+	background-size: 100% auto;
 	background-position: center;
-	height: 100vh;
+	position: relative;
 	padding: 80px 0;
 }
 
@@ -131,14 +132,16 @@ h2:after {
 
 header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/background.jpg);
-	background-size: cover;
-	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
 	height: 100vh;
 }
 
 .intro-text-box {
 	position: absolute;
-	width: 1140px;
+	width: 80%;
 	top: 40%;
 	left: 10%;
 }
@@ -146,9 +149,12 @@ header {
 /* ------ NAVIGATION ----- */
 
 .main-nav {
+	display: inline-block;
 	float: left;
+	text-align: center;
 	list-style: none;	
 	margin-top: 40px;
+	margin-left: 5%;
 }
 
 .main-nav li {
@@ -203,34 +209,47 @@ header {
 
 .section-technologies {
 	background: #4a3429;
+	text-align: center;
+}
+
+
+.parent-container {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .child-container {
 	display: inline-block;
-	margin: 0 auto;
-	padding: 1% 1%;
+	text-align: center;
 }
 
 .tech-box {
-	padding: 10% 1%;
 	text-align: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.01));
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10% 0%;
+}
+
+.progress-bar,
+.progress-filled {
+	width: 80%;
+	height: 15px;
+	max-height: 20px;
+	max-width: 150px;
+	border-radius: 5px;
 }
 
 .progress-bar {
-	margin: 15px auto;
+	margin: 3% auto;
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-	height: 20px;
-	width: 150px;
-	border-radius: 5px;
+
 }
 
 .progress-filled {
-	padding: 0;
 	background-color: #b55c1b;
-	height: 20px;
-	width: 150px;
-	border-radius: 5px;
 }
 
 
@@ -240,7 +259,7 @@ header {
 
 .section-contact {
 	background-color: #2e1345;
-	height: 50vh;
+	height: 50%;
 }
 
 .social-icons li {
@@ -296,18 +315,19 @@ header {
 /* ------------------------------------------ */
 
 footer {
-	height: 30vh;
+	height: 30%;
 	background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7));
 	background-color: #2e1345;
 }
 
 footer h3 {
-	margin-top: 18%;
+	margin-top: 10%;
 }
 
 footer p {
 	color: #8f8f8f;
 	text-align: center;
+	padding-bottom: 10px;
 	margin-top: 1%;
 	font-size: 80%;
 }
