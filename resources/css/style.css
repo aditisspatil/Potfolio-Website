@@ -150,8 +150,14 @@ header {
 
 /* ------ NAVIGATION ----- */
 
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
 .main-nav {
-	display: inline-block;
+	display: block;
 	float: left;
 	text-align: center;
 	list-style: none;	
@@ -161,8 +167,8 @@ header {
 
 .main-nav li {
 	display: inline-block;
-	margin-left: 10px;
-	padding: 8px 10px;
+	margin: 0px 10px;
+	padding: 3px 10px;
 	text-transform: uppercase;
 }
 
@@ -187,6 +193,22 @@ header {
 	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
 }
 
+/* ------ STICKY NAVIGATION ----- */
+
+.sticky {
+	background-color: #f00;
+	top: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.sticky .main-nav {
+	margin: 1% 5%;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	font-size: 90%;
+}
 
 /* ------------------------------------------ */
 /* SECTIONS ABOUT */
