@@ -60,6 +60,22 @@ $(document).ready(function() {
 		return false;
     });
 	
+	/* Mobile Navigation */
+	$('.js--nav-icon').click(function() {
+		var nav = $('.js--main-nav');
+		var icon = $('.js--nav-icon i');
+		
+		nav.slideToggle(200);
+		if (icon.hasClass('ion-navicon-round')) {
+			icon.addClass('ion-chevron-left');
+			icon.removeClass('ion-navicon-round');
+		} else {
+			icon.addClass('ion-navicon-round');
+			icon.removeClass('ion-chevron-left');
+		}
+	});
+	
+	
 });	
 	
 function animateTechnologies() {

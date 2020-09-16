@@ -184,7 +184,7 @@ nav {
 .main-nav li a:hover {
 	border-bottom: 2px solid #ff8b38;
 	color: #ff8b38;
-	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
+	transition: border-bottom 0.2s,  color 0.2s, background-color 0.2s ;
 }
 
 .main-nav li a:active {
@@ -193,10 +193,23 @@ nav {
 	transition: border-bottom 0.2s, color 0.2s, background-color 0.2s ;
 }
 
-/* ------ STICKY NAVIGATION ----- */
+/* ----- MOBILE NAVIGATION ----- */
+
+.mobile-nav-icon {
+	float: left;
+	padding: 10px 15px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 150%;
+	color: #f1e3cb;
+}
+
+/* ----- STICKY NAVIGATION ----- */
 
 .sticky {
-	background-color: #f00;
 	top: 0;
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }

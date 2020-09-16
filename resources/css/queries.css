@@ -71,6 +71,7 @@
 		background-position: 80% 0%;
 		height: 100vw;
 	}
+	nav { width: unset; }
 	
 	h2:after {
 		margin: 10px auto;
@@ -88,6 +89,26 @@
 		background: linear-gradient(rgba(0, 0, 0, 0.01) 10%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8) 100%);
 	}
 	.col { width: 50%; }
-	.main-nav { display: none; }
+	.main-nav { 
+		margin: 0px 0px; 
+		text-align: left;
+		display: none;
+	}
+	.mobile-nav-icon { display: inline-block; }
+	.main-nav li{ display: block; }
+	.main-nav li a:link,
+	.main-nav li a:visited,
+	.main-nav li a:active { 
+		display: block;
+		border:	0;
+		padding: 5px 0px;
+	}
+	.sticky .main-nav { margin: 0px 0px; }
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		font-size: 100%;
+	}
+
+	
 	.tech-box { padding: 10% 0%;}
 	.progress-bar, .progress-filled { height: 9px; }
