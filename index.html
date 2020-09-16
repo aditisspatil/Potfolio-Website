@@ -7,9 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<title>Aditi Patil</title>
 	</head>
 	<body>
@@ -17,10 +19,10 @@
 			<nav> 
 				<div>
 					<ul class="main-nav">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Technologies</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#technologies">Technologies</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -31,22 +33,24 @@
 			
 		</header>
 		
-		<section class="section-about">
-			<div class="row">
+		<section class="section-about js--sticky-nav" id="about">
+			<div class="row js--about">
 				<h2>About</h2>
 			</div>
 		</section>
 		
-		<section class="section-portfolio">
-			<div class="row">
+		<section class="section-portfolio" id="portfolio">
+			<div class="row js--portfolio">
 				<h2>Portfolio</h2>
 			</div>
 		</section>
 
-		<section class="section-technologies">
+		<section class="section-technologies" id="technologies">
 			<div class="row">
-				<h2>Technologies</h2>
-				<div class="row parent-container">
+				<div class="row js--technologies">
+					<h2>Technologies</h2>
+				</div>
+				<div class="row parent-container js--wp-1">
 					<div class="col span-1-of-4 child-container">
 						<div class="tech-box">
 							<h3>Objective-C</h3>
@@ -85,7 +89,7 @@
 					</div>
 				</div>
 				
-				<div class="row parent-container">
+				<div class="row parent-container js--wp-2">
 					<div class="col span-1-of-4 child-container">
 						<div class="tech-box">
 							<h3>HTML 5</h3>
@@ -123,7 +127,7 @@
 					</div>
 				</div>
 				
-				<div class="row parent-container">
+				<div class="row parent-container js--wp-3">
 					<div class="col span-1-of-4 child-container">
 						<div class="tech-box">
 							<h3>Octave</h3>
@@ -155,9 +159,11 @@
 			</div>
 		</section>
 	
-		<section class="section-contact">
+		<section class="section-contact" id="contact">
 			<div class="row">
-				<h2>Contact</h2>
+				<div class="row js--contact">
+					<h2>Contact</h2>
+				</div>
 				<div class="row"> 
 					<h3>Feel free to drop a message!</h3>
 				</div>
