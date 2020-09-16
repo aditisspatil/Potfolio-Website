@@ -30,8 +30,9 @@
 	html, body { font-size: 15px; }
 	section { padding: 20px 0px; }
 	header { 
-		background-size: auto 100%;
-		background-position: 70%;
+		background-size: 150% auto;
+		background-position: 90% 0%;
+		height: 80vw;
 	}
 
 	h2:after { 
@@ -66,8 +67,10 @@
 	h2 { font-size: 110%; }
 	header { 
 		background-image: url(img/background.jpg);
-		height: 160vw;
-		}
+		background-size: 180% auto;
+		background-position: 80% 0%;
+		height: 100vw;
+	}
 	
 	h2:after {
 		margin: 10px auto;
