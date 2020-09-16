@@ -32,7 +32,6 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 	overflow-x: hidden;
-	height: -webkit-fill-available;
 }
 
 
@@ -140,7 +139,6 @@ header {
 	background-size: cover;
 	position: relative;
 	height: 100vh;
-	min-height: -webkit-fill-available;
 }
 
 .intro-text-box {

@@ -21,6 +21,14 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
 $(document).ready(function() {
 	
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	window.addEventListener('resize', () => {
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	});
+
+	
 	/* For the Sticky Navigation Bar*/
 	$('.js--sticky-nav').waypoint(function(direction) {
 		if (direction == "down") {

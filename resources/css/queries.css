@@ -64,7 +64,10 @@
 	html, body { font-size: 14px; }
 	section { padding: 15px 0px; }
 	h2 { font-size: 110%; }
-	header { background-image: url(img/background.jpg);}
+	header { 
+		background-image: url(img/background.jpg);
+		height: calc(var(--vh, 1vh) * 100);;
+		}
 	
 	h2:after {
 		margin: 10px auto;
