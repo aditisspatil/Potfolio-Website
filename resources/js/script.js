@@ -44,7 +44,7 @@ $(document).ready(function() {
 	$('a[href^="#"]').click(function() {
         var target = $(this.hash);
         $('html, body').stop().animate({
-            scrollTop:  target.offset().top - 50
+            scrollTop:  target.offset().top - 10
         }, 300, function() {
 			if (target.attr('id') == 'about') {
 				animateCSS('.js--about', 'pulse');
