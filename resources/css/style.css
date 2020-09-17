@@ -54,8 +54,8 @@ section {
 /* ----- HEADINGS ----- */
 h1,
 h2 {
-	margin-top: 0;
-	margin-bottom: 20px;
+	margin-top: 10;
+	margin-bottom: 10px;
 	color: #f1e3cb;
 	font-weight: 300;
 	word-spacing: 3px;
@@ -80,12 +80,21 @@ h2 {
 
 h3 {
 	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	color: #ff8b38;
 	font-weight: 300;
 	font-size: 110%;
 	word-spacing: 2px;
 	text-align: center;
+}
+
+h4 {
+	font-size: 150%;
+	font-weight: 300;
+	margin-bottom: 10px;
+	color: #f1e3cb;
+	word-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 h2:after {
@@ -151,6 +160,14 @@ header {
 
 .intro-text-box-hidden {
 	opacity: 0;
+}
+
+.intro-text-box p {
+	color: #f1e3cb;
+	font-size: 150%;
+	font-weight: 300;
+	word-spacing: 3px;
+	letter-spacing: 1px;
 }
 
 /* ------ NAVIGATION ----- */

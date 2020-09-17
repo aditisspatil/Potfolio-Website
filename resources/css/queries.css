@@ -15,6 +15,7 @@
 	html, body { font-size: 16px; }
 	section { padding: 30px 0px; }
 	h2 { font-size: 120%; }
+	h4 { font-size: 120%; }
 	h2:after { margin: 15px auto; }
 	
 	.main-nav { margin: 3% 3%; }
@@ -32,7 +33,7 @@
 	header { 
 		background-size: 150% auto;
 		background-position: 90% 0%;
-		height: 80vw;
+		height: 70vw;
 	}
 
 	h2:after { 
@@ -66,6 +67,7 @@
 	html, body { font-size: 14px; }
 	section { padding: 15px 0px; }
 	h2 { font-size: 110%; }
+	h4 { font-size: 110%; }
 	header { 
 		background-image: url(img/background.jpg);
 		background-size: 180% auto;
