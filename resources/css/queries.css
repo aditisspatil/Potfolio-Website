@@ -57,6 +57,7 @@
 	}
 	.tech-box { padding: 8% 0%;}
 	.progress-bar, .progress-filled { height: 9px; }
+	.social-icons li { font-size: 200%; }
 	
 }
 
@@ -108,7 +109,7 @@
 	.sticky .main-nav li a:visited {
 		font-size: 100%;
 	}
-
-	
 	.tech-box { padding: 10% 0%;}
 	.progress-bar, .progress-filled { height: 9px; }
+	.social-icons li { font-size: 180%; }
+}
