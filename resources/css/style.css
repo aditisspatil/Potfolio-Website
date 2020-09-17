@@ -1,9 +1,12 @@
 /*
 
-Background	Green	153a1b		33803f
+Background	Green	#05622a		
 Background	Blue	181a43		484ca8
-Background	Brown	4a3429		735344
-Background	Purple	2e1345		
+Background	Brown	#664331		735344
+Background	Purple	360a5c		
+
+sticky note bg	#dbfa9ed6
+
 
 Heading 	Peach	f1e3cb
 Heading		Orange	ff8b38
@@ -251,8 +254,58 @@ nav {
 /* ------------------------------------------ */
 
 .section-about {
-	background-color: #153a1b;
+	background-color: #05622a;
 }
+
+.sticky-note,
+.frame-container {
+	display: inline-block;
+	margin: auto;
+	width: 15vw;
+	text-align: center;
+}
+
+.sticky-note {
+	height: 15vw;
+	background-color: #dbfa9ed6;
+	-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+	-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+	box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+.frame-container {
+	border: 1px solid #999;
+	background-color: #dbfa9ed6;
+	border-radius: 8px;
+	height: 20vw;
+}
+
+.frame-container img {
+	display: inline-block;
+	width: 90%;
+	margin: 5% auto;
+}
+
+.sticky-note-text,
+.sticky-note-list,
+.frame-text {
+	color: #000;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-family: 'Kalam', cursive;
+}
+
+.sticky-note-text,
+.sticky-note-list {
+	font-size: 140%;
+	margin: 8% auto;
+}
+
+.frame-text {
+	font-size: 120%;
+	margin: 5% auto;
+}
+
 
 /* ------------------------------------------ */
 /* SECTIONS PORTFOLIO */
@@ -268,7 +321,7 @@ nav {
 /* ------------------------------------------ */
 
 .section-technologies {
-	background: #4a3429;
+	background: #664331;
 	text-align: center;
 }
 
@@ -320,7 +373,7 @@ nav {
 /* ------------------------------------------ */
 
 .section-contact {
-	background-color: #2e1345;
+	background-color: #360a5c;
 	height: 50%;
 }
 
