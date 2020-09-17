@@ -75,6 +75,22 @@ $(document).ready(function() {
 		}
 	});
 	
+	/* Header Content */
+	
+	$('.js--wp-4').waypoint(function(direction) {
+		if (direction == "down") {
+			animateCSS('.js--wp-4', 'fadeOut').then((message) => {
+				$('.js--wp-4').addClass('intro-text-box-hidden');
+			});
+		} else {
+			animateCSS('.js--wp-4', 'fadeIn').then((message) => {
+				$('.js--wp-4').removeClass('intro-text-box-hidden');
+			});
+		}		
+	}, {
+		offset: '30%'
+	});
+	
 	
 });	
 	

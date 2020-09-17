@@ -149,6 +149,10 @@ header {
 	left: 10%;
 }
 
+.intro-text-box-hidden {
+	opacity: 0;
+}
+
 /* ------ NAVIGATION ----- */
 
 nav {
