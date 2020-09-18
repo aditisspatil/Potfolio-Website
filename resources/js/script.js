@@ -46,6 +46,8 @@ $(document).ready(function() {
         $('html, body').stop().animate({
             scrollTop:  target.offset().top - 10
         }, 300, function() {
+			closeMobileNav();
+
 			if (target.attr('id') == 'about') {
 				animateCSS('.js--about', 'zoomIn');
 			} else if (target.attr('id') == 'portfolio') {
@@ -64,7 +66,7 @@ $(document).ready(function() {
 	$('.js--nav-icon').click(function() {
 		var nav = $('.js--main-nav');
 		var icon = $('.js--nav-icon i');
-		
+			
 		nav.slideToggle(200);
 		if (icon.hasClass('ion-navicon-round')) {
 			icon.addClass('ion-chevron-left');
@@ -100,4 +102,17 @@ function animateTechnologies() {
 	animateCSS('.js--wp-2', 'pulse');
 	animateCSS('.js--wp-3', 'pulse');
 }
+
+function closeMobileNav() {
+	var nav = $('.js--main-nav');
+	var icon = $('.js--nav-icon i')
+	
+	if (icon.hasClass('ion-chevron-left')) {
+		nav.slideToggle(200);
+		icon.addClass('ion-navicon-round');
+		icon.removeClass('ion-chevron-left');
+	}
+}
+
+
 	
