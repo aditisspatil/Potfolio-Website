@@ -6,6 +6,7 @@
 	
 	h2:after { margin: 20px auto; }
 	.row { padding: 0 2%; }
+	.frame-container { height: 23vw }
 	.progress-bar, .progress-filled { height: 13px; }
 }
 
@@ -20,6 +21,12 @@
 	
 	.main-nav { margin: 3% 3%; }
 	.sticky .main-nav { margin: 1% 3%; }
+	
+	.sticky-note { height: 15vw; }
+	.frame-container { height: 25vw }
+	.sticky-note-text, .sticky-note-list { font-size: 120%; }
+	.frame-text { font-size: 120%; }
+	
 	.parent-container { width: 90%; }
 	.progress-bar, .progress-filled { height: 12px; }
 	.social-icons li { font-size: 250%; }
@@ -56,6 +63,16 @@
 		width: 100%;
 		background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8));
 	}
+	.section-about .col { 
+		width: 50%;
+		margin: 1% auto;
+	}
+	.sticky-note { height: 25vw; }
+	.frame-container { height: 45vw; }
+	.sticky-note-text, .sticky-note-list { font-size: 135%; }
+	.frame-text { font-size: 130%; }
+	
+	
 	.tech-box { padding: 8% 0%;}
 	.progress-bar, .progress-filled { height: 9px; }
 	.social-icons li { font-size: 200%; }
@@ -111,6 +128,16 @@
 	.sticky .main-nav li a:visited {
 		font-size: 100%;
 	}
+	
+	.section-about .col { width: 50%; }
+	.sticky-note { height: 35vw; }
+	.frame-container { height: 50vw }
+	.sticky-note-text, .sticky-note-list { font-size: 110%; }
+	.frame-text { 
+		font-size: 110%;
+		margin: auto; 
+	}
+	
 	.tech-box { padding: 10% 0%;}
 	.progress-bar, .progress-filled { height: 9px; }
 	.social-icons li { font-size: 180%; }
