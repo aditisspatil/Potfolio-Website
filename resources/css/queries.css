@@ -61,6 +61,7 @@
 		left: unset;
 		bottom: 0px;
 		width: 100%;
+		background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8));
 		background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8));
 	}
 	.section-about .col { 
@@ -106,6 +107,7 @@
 		left: unset;
 		bottom: 0px;
 		width: 100%;
+		background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01) 10%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8) 100%);
 		background: linear-gradient(rgba(0, 0, 0, 0.01) 10%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8) 100%);
 	}
 	.col { width: 50%; }
