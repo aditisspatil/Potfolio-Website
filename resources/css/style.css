@@ -31,8 +31,8 @@ html,
 body {
 	background-color: #fff;
 	color: #555;
-	font-family: 'Lato', 'Arial', 'sans-serif';
-	font-weight: 300;
+	font-family: 'Josefin Sans', 'Arial', 'sans-serif';
+	font-weight: 400;
 	font-size: 20px;
 	overflow-x: hidden;
 }
@@ -62,7 +62,6 @@ h2 {
 	margin-top: 10;
 	margin-bottom: 10px;
 	color: #f1e3cb;
-	font-weight: 300;
 	word-spacing: 3px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -70,13 +69,14 @@ h2 {
 
 h1 {
 	font-size: 200%;
-	font-weight: 400;
+	font-weight: 700;
 	word-spacing: 4px;
 	letter-spacing: 2px;
 }
 
 h2 {
 	font-size: 150%;
+	font-weight: 400;
 	word-spacing: 2px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -95,7 +95,6 @@ h3 {
 
 h4 {
 	font-size: 150%;
-	font-weight: 300;
 	margin-bottom: 10px;
 	color: #f1e3cb;
 	word-spacing: 2px;
