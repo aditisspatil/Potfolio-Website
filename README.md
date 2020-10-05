@@ -1,10 +1,17 @@
 # My Portfolio Website
 
-I created this website to showcase the projects I'd make in future, and provide UI to those projects.
+I created this website as my portfolio website, where I can showcase all that I am working on.
 
 I have used code and utilities provided by different vendors over internet, and all such files are placed in the "Vendors" folder.
 
-The animations used on the page are using jquery.waypoints and animate.css, both downloaded directly from internet
+##CSS:
+1. Animate.css https://animate.style/#javascript
+
+##JQuery:
+1. jquery.waypoints  http://imakewebthings.com/waypoints/
+2.
+
+
 
 The icons used are from ioncons v2
 
