@@ -1,8 +1,8 @@
 # My Portfolio Website
 
-I created this website as my portfolio website, where I can showcase all that I am working on.
+I created this website as my portfolio website, where I can showcase all projects that I am working on.
 
-I have used code and utilities provided by different vendors over internet, and all such files are placed in the "Vendors" folder.
+I have used code and utilities provided by different sources over internet, and all such files are placed in the "Vendors" folder.
 
 ## Font:
 Used Google Fonts
@@ -20,7 +20,8 @@ Used Google Fonts
 1. Apple iOS icon https://www.iconsdb.com/icon-sets/web-2-blue-icons/apple-icon.html
 2. Education Icon https://rahilafoundation.org/impact/impact/attachment/213-2135206_scholarship-icon-blue-png-clipart-baresan-university-png/
 3. Paint and Music icon https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWX23-qfMsY7TTlRWIQr8YZpwwcAVx9osk_w&usqp=CAU https://www.garlandisdschools.net/back
-3. Chess icon https://www.alamy.com/chess-pieces-knight-and-queen-line-icon-concept-chess-pieces-knight-and-queen-flat-vector-symbol-sign-outline-illustration-image242351965.html
+4. Chess icon https://www.alamy.com/chess-pieces-knight-and-queen-line-icon-concept-chess-pieces-knight-and-queen-flat-vector-symbol-sign-outline-illustration-image242351965.html
+5. IBKR Mobile App: https://apps.apple.com/us/app/ibkr-mobile/id454558592
 
 
 I have also used www.kyleledbetter.com and https://developerfolio.js.org/ website for reference and solving UI issues with media queries. I came across these sites on a page that listed top 10 portfolio websites for sorftware developers. 
