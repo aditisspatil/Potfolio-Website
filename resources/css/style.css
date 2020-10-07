@@ -84,7 +84,8 @@ h3 {
 /* ------------------------------------------ */
 
 .row {
-	max-width: 1140px;
+	width: 90vw;
+	max-width: 1500px;
 	margin: 0 auto 0 auto;
 }
 
@@ -98,6 +99,7 @@ h3 {
 	font-weight: 400;
 	font-size: 100%;
 	word-spacing: 1px;
+	line-height: 130%;
 	text-align: left;
 	padding: 10px 0px;
 }
@@ -123,11 +125,14 @@ h3 {
 }
 
 .basic-button:hover,
+.basic-button:focus,
 .basic-button:active {
+	outline: none;
 	border: none;
 	background-color: var(--light-text-color) ;
 	transition: background-color .2s;
 }
+
 
 /* ------------------------------------------ */
 /* NAVIGATION COMPONENTS */
@@ -214,16 +219,6 @@ section {
 	padding: 1%;
 }
 
-.parent-container,
-.img-text-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	width: 100%;
-	padding: 1%;
-}
-
 .section-separator,
 .section-title {
 	display: inline-block;
@@ -251,16 +246,17 @@ section {
 	max-height: 200px;
 	border-radius: 50%;
 	padding: 5px;
-	margin: 1% 5%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-.text-box {
-	display: inline-block;
-	float: center;
-	text-align: center ;
-	margin: 1% 5%;
-	width: 50%;
+.parent-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 1%;
+	width: 100%;
+	align-items: stretch;
 }
 
 /* ----- Header Content ----- */
@@ -277,6 +273,7 @@ section {
 .profile-img {
 	width: 20vw;
 	height: 20vw;
+	margin: 1% 5%;
 	float: center;
 	text-align: center;
 }
@@ -290,10 +287,37 @@ section {
 }
 
 /* ----- About Section ----- */
+.img-text-container {
+	display: flex;
+	justify-content:flex-start; 
+    flex-direction: column;
+	width: 30%;
+	padding: 2% 1%;
+	margin: 0.5% 2%;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
 
 .about-img {
+	width: 8vw;
+	height: 8vw;
+	margin: 10px auto;
 	padding: 15px;
 }
+
+.about-text-box {
+	display: block;
+	float: center;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.about-text-box h3 {
+	text-align: center;
+	margin-top: 50px;
+}	
 
 .simple-text li {
 	margin-left: 20px;
@@ -302,14 +326,29 @@ section {
 }
 
 /* ----- Portfolio Section ----- */
+.project-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 2% 8%;
+}
+
 .media-box {
 	display: inline-block;
-	width: 426px;
-	height: 240px;
-	padding: 5px;
-	border-radius: 5px;
+	position: relative;
+	width: 40%;
+	padding-top: calc(.5625 * 30)%; /* 16:9 Aspect Ratio */
+	border-radius: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-text-box {
+	display: inline-block;
+	float: center;
+	text-align: center ;
+	margin-left: 5%;
 }
 
 /* ----- Technology Section ----- */
@@ -333,18 +372,20 @@ section {
 	margin-right: auto;
 	text-align: center;
 	padding: 5px 10px;
+	width: 90%;
 }
 
 .tech-list li {
 	display: inline-block;
 	margin: auto;
+	width: 25%;
 }
 
 .tech-container {
 	display: inline-block;
 	float: center;
 	text-align: center;
-	width: 14vW;
+	width: 85%;
 	margin: 10px auto;
 	padding: 5px;
 	border-radius: 25px;
@@ -391,7 +432,7 @@ section {
 	font-size: 80%;
 	word-spacing: 2px;
 	text-align: center;
-	padding: 10px 0px;
+	padding: 10px 5px;
 }
 
 /* ----- Contact ----- */

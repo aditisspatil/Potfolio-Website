@@ -105,7 +105,6 @@ $(document).ready(function() {
 	
 });	
 	
-
 function closeMobileNav() {
 	var nav = $('.js--main-nav');
 	var icon = $('.js--nav-icon i')
