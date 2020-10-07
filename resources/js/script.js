@@ -44,21 +44,16 @@ $(document).ready(function() {
 	$('a[href^="#"]').click(function() {
         var target = $(this.hash);
         $('html, body').stop().animate({
-            scrollTop:  target.offset().top - 10
-        }, 300, function() {
+            scrollTop:  target.offset().top - 40
+        }, 600, function() {
 			closeMobileNav();
 
 			if (target.attr('id') == 'about') {
-				animateCSS('.js--about', 'zoomIn');
 			} else if (target.attr('id') == 'portfolio') {
-				animateCSS('.js--portfolio', 'zoomIn');
 			} else if (target.attr('id') == 'technologies') {
-				animateTechnologies();
 			} else if (target.attr('id') == 'contact') {
-				animateCSS('.js--contact', 'zoomIn');
 			}
-		}
-		);
+		});
 		return false;
     });
 	
@@ -78,7 +73,6 @@ $(document).ready(function() {
 	});
 	
 	/* Header Content */
-	
 	$('.js--wp-4').waypoint(function(direction) {
 		if (direction == "down") {
 			animateCSS('.js--wp-4', 'fadeOut').then((message) => {
@@ -93,15 +87,24 @@ $(document).ready(function() {
 		offset: '30%'
 	});
 	
+	/* Button Clicks */
+	$('.js--tech-button').click(function() {
+		var techBox = $('.js--tech-box');
+		var button = $('.js--tech-button')		
+		
+		if (techBox.hasClass('tech-desc-box-small')) {
+			button.text('Hide Details');
+			techBox.addClass('tech-desc-box-expanded');
+			techBox.removeClass('tech-desc-box-small');
+		} else {
+			button.text('Show Details');
+			techBox.addClass('tech-desc-box-small');
+			techBox.removeClass('tech-desc-box-expanded');
+		}
+	});
 	
 });	
 	
-function animateTechnologies() {
-	animateCSS('.js--technologies', 'zoomIn');
-	animateCSS('.js--wp-1', 'pulse');
-	animateCSS('.js--wp-2', 'pulse');
-	animateCSS('.js--wp-3', 'pulse');
-}
 
 function closeMobileNav() {
 	var nav = $('.js--main-nav');

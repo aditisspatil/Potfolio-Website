@@ -12,7 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam&display=swap">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		
 		<title>Aditi Patil</title>
@@ -50,19 +49,301 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="intro-text-box js--wp-4">
-				<h1>Aditi Patil</h1>
-				<h4>iOS Developer</h4>
+			<div class="row intro-container">
+				<img class="round-img profile-img" src="resources/Img/profile.jpg" alt="My picture">
+				<div class="intro-text-box">
+					<h1>Aditi Patil</h1>
+				</div>
 			</div>
 			
 		</header>
-		
-		<section class="section-about js--sticky-nav" id="about">
+
+		<section class="js--sticky-nav" id="about">
 			<div class="row js--about">
-				<div class="row">
-					<h2>About</h2>
+				<div class="row section-title-container">
+					<div class="section-separator"></div>
+					<div "row section-title"><h2>About</h2></div>
+					<div class="section-separator"></div>
 				</div>
 				<div class="row">
+					<div class="img-text-container">
+						<img class="round-img about-img" src="vendors\img\ios.png" alt="Education Icon">
+						<div class="text-box">
+							<h3>Work Experience</h3>
+							<p class="simple-text">
+								I am working as an iOS Developer at Interactive Brokers since 2018. 
+								I work with Objective-C and Swift.
+							</p>
+						</div>
+					</div>
+					<div class="img-text-container">
+						<img class="round-img about-img" src="vendors\img\education.png" alt="Education Icon">
+						<div class="text-box">
+							<h3>Education and Courses</h3>
+							<ul class="simple-text">
+								<li>Bachelor of Engineering in Information Technology, 2018</li>
+								<li>Machine Learning Course from Coursera, by Andrew Ng</li>
+								<li>Python Crash Course, from Udemy</li>
+							</ul>
+						</div>
+					</div>
+					<div class="img-text-container">
+						<img class="round-img about-img" src="vendors\img\hobby.png" alt="Education Icon">
+
+						<div class="text-box">
+							<h3>Hobbies and Interests</h3>
+							<ul class="simple-text">
+								<li>Sketching and Painting</li>
+								<li>Music (Guitar)</li>
+								<li>Reading Novels</li>
+								<li>Traveling and Exploring</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="" id="portfolio">
+			<div class="row js--portfolio">
+				<div class="row section-title-container">
+					<div class="section-separator"></div>
+					<div "row section-title"><h2>Portfolio</h2></div>
+					<div class="section-separator"></div>
+				</div>
+				<div>
+					<div class="parent-container">
+						<img class="media-box" src="vendors\img\ibkr.png" alt="Education Icon">
+
+						<div class="text-box">
+							<h3>Interactive Brokers- iOS App</h3>
+							<p class="simple-text">
+								I am working on the IBKR Mobile app for 2+ years. 
+								It is a trading app that is available over iPhone and iPad.
+								I haave worked on 6+ projects, which involved co-ordinating with
+								webapp, server, backend,  teams and deliver new features to the users.
+							</p>
+						</div>
+					</div>
+					<div class="img-text-container">
+						<video class="media-box" controls>
+							<source src="resources/vid/mapvideo.mp4" type="video/mp4">
+						</video>
+						<div class="text-box">
+							<h3>Map for Gaming Application</h3>
+							<p class="simple-text">
+								We created a combat game as our final year project in BE.
+								I created the map and my teammates handled the coding part in Unity.
+								I used Blender to build the map components and added light effects after importing it in Unity.
+								The map depicts a part of Vidyalankar Institute of Technology, where I pursued BE.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="technologies">
+			<div class="row js--technologies">
+				<div class="row section-title-container">
+					<div class="section-separator"></div>
+					<div "row section-title"><h2>Technologies</h2></div>
+					<div class="section-separator"></div>
+				</div>
+				<div class="tech-desc-container">
+						<h3>I have worked on following technologies</h3>
+						<button class="basic-button js--tech-button">Show Details</button>
+					</div>
+				<div class="parent-container">
+					<ul class="tech-list">
+						<li class="col span-1-of-4">
+							<div class="tech-container">
+								<div>
+									<p class="simple-text">Objective-C</p>
+								</div>
+							 	<div class="js--tech-box tech-desc-box-expanded">
+									<div class="progress-bar">
+										<div class="progress-filled" style="width:90%">
+										</div>
+									</div>
+									<p class="desc-text">Hands on experience on Interactive Brokers app</p>
+								</div>
+							</div>
+						</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">Swift</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:60%">
+											</div>
+										</div>
+										<p class="desc-text">Some experience on Interactive Brokers app</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">Git</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:70%">
+											</div>
+										</div>
+										<p class="desc-text">Work project and my own repository is managed over Git hub</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">Python</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:50%">
+											</div>
+										</div>
+										<p class="desc-text">Knowledge through crash course and some projects</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">HTML 5</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:60%">
+											</div>
+										</div>
+										<p class="desc-text">Few mini-projects during BE and this website</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">CSS 3</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:60%">
+											</div>
+										</div>
+										<p class="desc-text">Used for the mini-projects during BE and for this website</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">Java</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:50%">
+											</div>
+										</div>
+										<p class="desc-text">Learned during BE and used for competitive coding on HackerRank</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">C</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:50%">
+											</div>
+										</div>
+										<p class="desc-text">First language learned ever during BE, used for basic CG programs</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">Octave</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:70%">
+											</div>
+										</div>
+										<p class="desc-text">Learned for Machine Learning course, and used it for the assignments</p>
+									</div>
+								</div>
+							</li>
+							<li class="col span-1-of-4">
+								<div class="tech-container">
+									<div>
+										<p class="simple-text">Blender</p>
+									</div>
+									<div class="js--tech-box tech-desc-box-expanded">
+										<div class="progress-bar">
+											<div class="progress-filled" style="width:50%">
+											</div>
+										</div>
+										<p class="desc-text">Created map of college for gaming application as final year project</p>
+									</div>
+								</div>
+							</li>	
+				
+					</ul>
+				</div>
+				
+				
+			</div>
+		</section>
+				
+		<section id="contact">
+			<div class="row js--about">
+				<div class="row section-title-container">
+					<div class="section-separator"></div>
+					<div "row section-title"><h2>Contact</h2></div>
+					<div class="section-separator"></div>
+				</div>
+				<div class="row contact-desc-container">
+					<h3>Feel free to drop a message!</h3>
+				</div>
+				<div class="row">
+					<ul class="social-icons">
+						<li><a href="mailto:aditi.ss.patil@gmail.com"><i class="ion-email"></i></a></li>
+						<li><a href="https://www.facebook.com/aditi.jadoo/"><i class="ion-social-facebook"></i></a></li>
+						<li><a href="https://www.instagram.com/aditi.jadoo"><i class="ion-social-instagram"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/aditi-p-79619088"><i class="ion-social-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="row">
+				<h3>Thank you for visiting!</h3>
+				<div class="copyright-text">
+					<p>Copryight &copy; Aditi Patil</p>
+				</div>
+			</div>
+			
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="vendors/js/jquery.waypoints.min.js"></script>
+		<script src="resources/js/script.js"></script>
+	</body>
+	
+</html>
+
+
+			<!--
 					<ul>
 						<li class="col span-1-of-4">
 							<div class="sticky-note">
@@ -117,11 +398,12 @@
 				</div>
 			</div>
 		</section>
-		
+		<!--
 		<section class="section-portfolio" id="portfolio">
 			<div class="row js--portfolio">
 				<h2>Portfolio</h2>
 			</div>
+			<div class="js--flask">Click Here</div>
 		</section>
 
 		<section class="section-technologies" id="technologies">
@@ -265,14 +547,8 @@
 				<p>Copryight &copy; Aditi Patil</p>
 			</div>
 		</footer>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="vendors/js/jquery.waypoints.min.js"></script>
+		!-->
 
-		<script src="resources/js/script.js"></script>
-	</body>
-	
-</html>
 
 <!--
 
