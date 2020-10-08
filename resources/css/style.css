@@ -269,9 +269,8 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 5%;
-	padding-top: 5%;
-	padding-bottom: 1%;
+	margin-bottom: 10px;
+	padding-top: 6%;
 	float: center;
 	max-width: 60vw;
 }
