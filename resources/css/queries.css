@@ -2,12 +2,14 @@
 /* Big tablet*/
 @media screen and (max-width: 1200px) {
 	html, body { font-size: 18px; }
-	section { padding: 50px 0px; }
 	
-	h2:after { margin: 20px auto; }
-	.row { padding: 0 2%; }
-	/*
-	.frame-container { height: 23vw } */
+	.basic-button {
+		width: 140px;
+		height: 40px;
+		border-radius: 20px;
+	}
+	.project-container { padding: 2% 2%; }
+	.tech-list { width: 100%; }
 	.progress-bar, .progress-filled { height: 13px; }
 }
 
