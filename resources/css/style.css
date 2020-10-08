@@ -30,7 +30,7 @@ outline: solid #f00 1px !important;
 	padding:0;
 	box-sizing: border-box;
 	background-color: transparent;
-
+	outline: solid #f00 1px !important;
 }
 
 html,
@@ -182,14 +182,15 @@ nav {
 /* ----- MOBILE NAVIGATION ----- */
 .mobile-nav-icon {
 	float: left;
-	padding: 10px 15px;
 	cursor: pointer;
 	display: none;
+	border: 1px solid var(--inv-bg-color);
+	padding: 5px 8px 0px 8px;
 }
 
 .mobile-nav-icon i {
 	font-size: 150%;
-	color: #f1e3cb;
+	color: var(--inv-bg-color);
 }
 
 /* ----- STICKY NAVIGATION ----- */
@@ -271,7 +272,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom%: 5%;
+	margin-bottom: 5%;
 	padding-top: 5%;
 	padding-bottom: 1%;
 	float: center;

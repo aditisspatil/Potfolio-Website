@@ -72,6 +72,18 @@ $(document).ready(function() {
 		}
 	});
 	
+	// Hide dropdown menu on click outside
+    $(document).mouseup(function(event){
+		var nav = $('.js--main-nav');
+		var icon = $('.js--nav-icon i');
+			
+		if (icon.hasClass('ion-chevron-left')) {
+			nav.slideToggle(200);
+			icon.addClass('ion-navicon-round');
+			icon.removeClass('ion-chevron-left');
+		}
+    });
+	
 	/* Header Content */
 	$('.js--wp-4').waypoint(function(direction) {
 		if (direction == "down") {
