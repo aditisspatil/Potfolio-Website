@@ -30,7 +30,6 @@ outline: solid #f00 1px !important;
 	padding:0;
 	box-sizing: border-box;
 	background-color: transparent;
-	outline: solid #f00 1px !important;
 
 }
 
@@ -116,7 +115,6 @@ h3 {
 	height: 50px;
 	border-radius: 25px;
 	border: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 	transition: background-color 0.2s;
 }
 
@@ -248,17 +246,24 @@ section {
 	max-height: 200px;
 	border-radius: 50%;
 	padding: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
 .parent-container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: strech;
 	margin: auto;
 	padding: 1%;
 	width: 100%;
-	align-items: stretch;
+}
+
+.big-shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.small-shadow {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ----- Header Content ----- */
@@ -279,6 +284,8 @@ section {
 	margin: 1% 5%;
 	float: center;
 	text-align: center;
+	min-width: 150px;
+	min-height: 150px;
 }
 
 .intro-text-box {
@@ -292,14 +299,12 @@ section {
 /* ----- About Section ----- */
 .img-text-container {
 	display: flex;
-	justify-content:flex-start; 
+	justify-content: flex-start; 
     flex-direction: column;
 	width: 30%;
 	padding: 2% 1%;
-	margin: 0.5% 2%;
+	margin: 0.5% 1.5%;
 	border-radius: 5px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-img {
@@ -307,6 +312,8 @@ section {
 	height: 8vw;
 	margin: 10px auto;
 	padding: 15px;
+	min-width: 70px;
+	min-height: 70px;
 }
 
 .about-text-box {
@@ -329,12 +336,17 @@ section {
 }
 
 /* ----- Portfolio Section ----- */
+.portfolio-content {
+	display: block;
+	text-align: center;
+}
 .project-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	padding: 2% 8%;
+	width: 95%;
+	padding: 2% 5%;
+	margin: 2% auto;
 }
 
 .media-box {
@@ -343,8 +355,6 @@ section {
 	width: 40%;
 	padding-top: calc(.5625 * 30)%; /* 16:9 Aspect Ratio */
 	border-radius: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-text-box {
@@ -393,7 +403,6 @@ section {
 	padding: 5px;
 	border-radius: 25px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19); 
 }
 
 .tech-container .simple-text {
