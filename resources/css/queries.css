@@ -114,7 +114,7 @@
 	.main-nav { 
 		margin-top: 20px;
 		text-align: left;
-		display: none;
+		display: none;		
 	}
 	.mobile-nav-icon { display: inline-block; }
 	.main-nav li{ display: block; }

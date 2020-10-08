@@ -47,12 +47,6 @@ $(document).ready(function() {
             scrollTop:  target.offset().top - 40
         }, 600, function() {
 			closeMobileNav();
-
-			if (target.attr('id') == 'about') {
-			} else if (target.attr('id') == 'portfolio') {
-			} else if (target.attr('id') == 'technologies') {
-			} else if (target.attr('id') == 'contact') {
-			}
 		});
 		return false;
     });
@@ -62,7 +56,7 @@ $(document).ready(function() {
 		var nav = $('.js--main-nav');
 		var icon = $('.js--nav-icon i');
 			
-		nav.slideToggle(200);
+		nav.toggle("fast");
 		if (icon.hasClass('ion-navicon-round')) {
 			icon.addClass('ion-chevron-left');
 			icon.removeClass('ion-navicon-round');
@@ -73,31 +67,16 @@ $(document).ready(function() {
 	});
 	
 	// Hide dropdown menu on click outside
-    $(document).mouseup(function(event){
+    $(document).mouseup(function(e){
 		var nav = $('.js--main-nav');
 		var icon = $('.js--nav-icon i');
 			
-		if (icon.hasClass('ion-chevron-left')) {
-			nav.slideToggle(200);
+		if (!icon.is(e.target) && icon.hasClass('ion-chevron-left')) {
+			nav.toggle("fast");
 			icon.addClass('ion-navicon-round');
 			icon.removeClass('ion-chevron-left');
 		}
     });
-	
-	/* Header Content */
-	$('.js--wp-4').waypoint(function(direction) {
-		if (direction == "down") {
-			animateCSS('.js--wp-4', 'fadeOut').then((message) => {
-				$('.js--wp-4').addClass('intro-text-box-hidden');
-			});
-		} else {
-			animateCSS('.js--wp-4', 'fadeIn').then((message) => {
-				$('.js--wp-4').removeClass('intro-text-box-hidden');
-			});
-		}		
-	}, {
-		offset: '30%'
-	});
 	
 	/* Button Clicks */
 	$('.js--tech-button').click(function() {

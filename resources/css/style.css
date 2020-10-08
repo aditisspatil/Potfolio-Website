@@ -16,7 +16,6 @@ outline: solid #f00 1px !important;
 
 :root {
 	--bg-color: #fff;
-	--light-bg-color: #bbe1fa;
 	--dark-text-color: #0f4c75;
 	--light-text-color: #3282b8;
 	--inv-bg-color: #0f4c75;
@@ -30,7 +29,6 @@ outline: solid #f00 1px !important;
 	padding:0;
 	box-sizing: border-box;
 	background-color: transparent;
-	outline: solid #f00 1px !important;
 }
 
 html,
@@ -42,7 +40,6 @@ body {
 	font-size: 20px;
 	overflow-x: hidden;
 }
-
 
 /* ----- HEADINGS ----- */
 h1,
@@ -499,7 +496,6 @@ footer h3 {
 	float: center;
 	margin: 10px auto;
 } 
-
 
 .copyright-text {
 	display: block;
