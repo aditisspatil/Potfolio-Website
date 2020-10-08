@@ -30,6 +30,8 @@ outline: solid #f00 1px !important;
 	padding:0;
 	box-sizing: border-box;
 	background-color: transparent;
+	outline: solid #f00 1px !important;
+
 }
 
 html,
@@ -265,7 +267,8 @@ section {
 	justify-content: center;
 	align-items: center;
 	margin-bottom%: 5%;
-	padding: 5% 0 1% 0;
+	padding-top: 5%;
+	padding-bottom: 1%;
 	float: center;
 	max-width: 60vw;
 }

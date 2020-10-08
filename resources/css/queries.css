@@ -8,6 +8,7 @@
 		height: 40px;
 		border-radius: 20px;
 	}
+	.intro-container { padding-top: 6%; }
 	.project-container { padding: 2% 2%; }
 	.tech-list { width: 100%; }
 	.progress-bar, .progress-filled { height: 13px; }
@@ -17,24 +18,26 @@
 /* Small Tablets to Big Tablets */
 @media screen and (max-width: 1023px) {
 	html, body { font-size: 16px; }
-	section { padding: 30px 0px; }
 	h2 { font-size: 120%; }
-	h4 { font-size: 120%; }
-	h2:after { margin: 15px auto; }
+	h3 { font-size: 110%; }
+	section { padding: 20px 0; }
 	
-	.main-nav { margin: 3% 3%; }
-	.sticky .main-nav { margin: 1% 3%; }
-	
-	/*
-	.sticky-note { height: 15vw; }
-	.frame-container { height: 25vw }
-	.sticky-note-text, .sticky-note-list { font-size: 120%; }
-	.frame-text { font-size: 120%; }
-	
-	.parent-container { width: 90%; }
+	.row { width: 95vw; }
+	.basic-button {
+		width: 130px;
+		height: 36px;
+		border-radius: 18px;
+	}
+	.intro-container { padding-top: 60px; }
+	.img-text-container { 
+		width: 33%;
+		padding: 1% 1%;
+		margin: 0.5% 1%;
+	}
+	.about-text-box { width: 95%; }
+	.about-text-box h3 { margin-top: 20px; }	
+	.tech-container { width: 90%; }
 	.progress-bar, .progress-filled { height: 12px; }
-	.social-icons li { font-size: 250%; }
-	*/
 }
 
 
