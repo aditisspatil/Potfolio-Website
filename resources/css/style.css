@@ -217,12 +217,11 @@ section {
 	padding: 1%;
 }
 
-.section-separator,
-.section-title {
+.section-separator {
 	display: inline-block;
 	float: center;
 	text-align: center ;
-	margin: 1%;
+	margin: auto;
 }
 
 .section-separator {
