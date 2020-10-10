@@ -168,6 +168,7 @@ nav {
 	transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
 }
 
+.main-nav li a:focus,
 .main-nav li a:hover,
 .main-nav li a:active {
 	background-color: var(--inv-bg-color);
@@ -331,6 +332,28 @@ section {
 	padding-left: 10px;
 }
 
+.simple-text a:link,
+.simple-text a:visited {
+	margin-top: 10px;
+	color: var(--light-text-color);
+	text-decoration: none;
+	border-bottom: 1px solid var(--light-text-color);
+	transition: color 0.2s;
+}
+
+.simple-text a:focus,
+.simple-text a:hover,
+.simple-text a:active {
+	color: var(--dark-text-color);
+	transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
+}
+
+p i,
+.simple-text li a i {
+	padding-left: 10px;
+	font-size: 100%;
+}
+
 /* ----- Portfolio Section ----- */
 .portfolio-content {
 	display: block;
@@ -475,6 +498,7 @@ section {
 	transition: color 0.2s;
 }
 
+.social-icons li a:focus,
 .social-icons li a:hover,
 .social-icons li a:active {
 	text-decoration: none;
