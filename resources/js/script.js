@@ -86,13 +86,117 @@ $(document).ready(function() {
 			button.text('Hide Details');
 			techBox.addClass('tech-desc-box-expanded');
 			techBox.removeClass('tech-desc-box-small');
+			animateCSS('.wp-8', 'fadeIn');
 		} else {
 			button.text('Show Details');
 			techBox.addClass('tech-desc-box-small');
 			techBox.removeClass('tech-desc-box-expanded');
+			animateCSS('.wp-8', 'fadeIn');
 		}
 	});
 	
+	/* Animations */
+	
+	//Roll in 
+	$('.wp-1').waypoint(function(direction){
+		$('.wp-1').addClass('animate__animated animate__rollIn');
+	},{ offset: '80%' }
+	);
+	
+	$('.wp-2').waypoint(function(direction){
+		$('.wp-2').addClass('animate__animated animate__rollIn');
+	},{ offset: '80%' }
+	);
+	
+	$('.wp-3').waypoint(function(direction){
+		$('.wp-3').addClass('animate__animated animate__rollIn');
+	},{ offset: '80%' }
+	);
+	
+	$('.wp-1').waypoint(function(direction){
+		if (direction == 'down') {
+			animateCSS('.wp-1', 'rollOut');
+		}
+	},{ offset: '10%' }
+	);
+	
+	// Roll out
+	$('.wp-1').waypoint(function(direction){
+		if (direction == 'down') {
+			animateCSS('.wp-1', 'rollOut');
+		}
+	},{ offset: '10%' }
+	);
+	$('.wp-2').waypoint(function(direction){
+		if (direction == 'down') {
+			animateCSS('.wp-2', 'rollOut');
+		}
+	},{ offset: '10%' }
+	);
+	$('.wp-3').waypoint(function(direction){
+		if (direction == 'down') {
+			animateCSS('.wp-3', 'rollOut');
+		}
+	},{ offset: '10%' }
+	);
+	
+	//Fade in Left-Right
+	$('.wp-4').waypoint(function(direction){
+		$('.wp-4').addClass('animate__animated animate__fadeInLeft');
+	},{ offset: '80%'
+	});
+	
+	$('.wp-5').waypoint(function(direction){
+		$('.wp-5').addClass('animate__animated animate__fadeInRight');
+	},{ offset: '80%'
+	});
+	
+	$('.wp-6').waypoint(function(direction){
+		$('.wp-6').addClass('animate__animated animate__fadeInLeft');
+	},{ offset: '80%'
+	});
+	
+	$('.wp-7').waypoint(function(direction){
+		$('.wp-7').addClass('animate__animated animate__fadeInRight');
+	},{ offset: '80%'
+	});
+	
+	$('.wp-9').waypoint(function(direction){
+		$('.wp-9').addClass('animate__animated animate__fadeIn');
+	},{ offset: '50%'
+	});
+	
+	// Nested Animation
+	$('.wp-10').waypoint(function(direction){
+		var delay = 150;
+		
+		setTimeout(function() {
+				animateSocialIcons('.wp-10');
+			}, delay
+		);		setTimeout(function() {
+				animateSocialIcons('.wp-11');
+			}, 2*delay
+		);
+		setTimeout(function() {
+				animateSocialIcons('.wp-12');
+			}, 3*delay
+		);
+		setTimeout(function() {
+				animateSocialIcons('.wp-13');
+			}, 4*delay
+		);
+		setTimeout(function() {
+				animateSocialIcons('.wp-14');
+			}, 5*delay
+		);
+	},{ offset: '80%'
+	});
+	
+	function animateSocialIcons(element) {
+		var animation = 'fadeInUp';
+		animateCSS(element, animation);
+	}
+
 });	
 
 function closeMobileNav() {
@@ -107,6 +211,3 @@ function closeMobileNav() {
 	}
 }
 
-
-
-	
