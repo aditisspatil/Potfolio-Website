@@ -45,36 +45,35 @@ $(document).ready(function() {
         var target = $(this.hash);
         $('html, body').stop().animate({
             scrollTop:  target.offset().top - 40
-        }, 600, function() {
+        }, 600, function () {
 			closeMobileNav();
-		});
+		}
+		);
 		return false;
     });
 	
 	/* Mobile Navigation */
-	$('.js--nav-icon').click(function() {
+	$('.js--nav-icon').mouseup(function(e) {
 		var nav = $('.js--main-nav');
-		var icon = $('.js--nav-icon i');
-			
-		nav.toggle("fast");
-		if (icon.hasClass('ion-navicon-round')) {
-			icon.addClass('ion-chevron-left');
-			icon.removeClass('ion-navicon-round');
-		} else {
-			icon.addClass('ion-navicon-round');
-			icon.removeClass('ion-chevron-left');
+		
+		if ( nav.hasClass('js--nav-open') && nav.width() > 0 ) { //Already opened Nav
+			closeMobileNav();
 		}
+		else if ( !nav.hasClass('js--nav-open') ) {
+			nav.animate({width: 'toggle'}, 
+			200,
+			function() {
+					nav.addClass('js--nav-open');
+			});
+		}
+
 	});
 	
-	// Hide dropdown menu on click outside
+	// Hide nav menu on click outside
     $(document).mouseup(function(e){
-		var nav = $('.js--main-nav');
-		var icon = $('.js--nav-icon i');
-			
-		if (!icon.is(e.target) && icon.hasClass('ion-chevron-left')) {
-			nav.toggle("fast");
-			icon.addClass('ion-navicon-round');
-			icon.removeClass('ion-chevron-left');
+		var icon = $('.js--nav-icon')
+		if ( !icon.is(e.target) ) {
+			closeMobileNav();	
 		}
     });
 	
@@ -95,17 +94,19 @@ $(document).ready(function() {
 	});
 	
 });	
-	
+
 function closeMobileNav() {
 	var nav = $('.js--main-nav');
-	var icon = $('.js--nav-icon i')
-	
-	if (icon.hasClass('ion-chevron-left')) {
-		nav.slideToggle(200);
-		icon.addClass('ion-navicon-round');
-		icon.removeClass('ion-chevron-left');
+    if ( nav.hasClass('js--nav-open') ) {
+		nav.animate({width: 'toggle'},
+		'fast',
+		function() {
+			nav.removeClass('js--nav-open');
+		}
+		);	
 	}
 }
+
 
 
 	

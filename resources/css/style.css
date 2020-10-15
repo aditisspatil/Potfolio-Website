@@ -421,7 +421,7 @@ p i,
 	margin: 10px auto;
 	padding: 5px;
 	border-radius: 25px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .tech-container .simple-text {
