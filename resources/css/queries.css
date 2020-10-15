@@ -110,18 +110,23 @@
 	h2 { font-size: 110%; }
 	h3 { font-size: 100%; }
 	
-	nav { width: unset; }
-	.main-nav { 
-		margin-top: 20px;
-		text-align: left;
-		display: none;		
+	nav { 
+		width: unset; 
+		margin-top: 20px; 
 	}
+	.main-nav { display: none; }
 	.mobile-nav-icon { display: inline-block; }
+	.main-nav ul{ 
+		height: 100vh;
+		padding-top: 50px;
+	}
 	.main-nav li{ display: block; }
+		}
 	.main-nav li a:link,
 	.main-nav li a:visited,
 	.main-nav li a:active { 
 		display: block;
+		text-align: left;
 		border:	0;
 		padding-top: 10px;
 		margin: auto;
