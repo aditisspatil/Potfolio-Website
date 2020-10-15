@@ -156,6 +156,8 @@
 	}
 	.tech-desc-container h3 { width: 60%; }
 	.tech-list li { width: 50%; }
-	.tech-desc-box-expanded { height: 80px; }
+	.tech-desc-box-expanded { height: 90px; }
 	.progress-bar, .progress-filled { height: 9px; }
+	
+	.desc-text { padding: 8px 4px; }
 }
