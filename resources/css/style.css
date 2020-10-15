@@ -186,9 +186,9 @@ nav {
 	padding: 5px 8px 0px 8px;
 }
 
-.mobile-nav-icon i {
-	font-size: 200%;
+.mobile-nav-icon ion-icon {
 	color: var(--inv-bg-color);
+	font-size: 200%;
 }
 
 /* ----- STICKY NAVIGATION ----- */
