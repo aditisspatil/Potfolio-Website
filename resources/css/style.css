@@ -339,7 +339,9 @@ section {
 }
 
 .simple-text a:link,
-.simple-text a:visited {
+.simple-text a:visited,
+.desc-text a:link,
+.desc-text a:visited {
 	margin-top: 10px;
 	color: var(--light-text-color);
 	text-decoration: none;
@@ -349,13 +351,16 @@ section {
 
 .simple-text a:focus,
 .simple-text a:hover,
-.simple-text a:active {
+.simple-text a:active,
+.desc-text a:focus,
+.desc-text a:hover
+.desc-text a:active {
 	color: var(--dark-text-color);
 	transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
 }
 
-p i,
-.simple-text li a i {
+p ion-icon,
+.simple-text li a ion-icon{
 	padding-left: 10px;
 	font-size: 100%;
 }
