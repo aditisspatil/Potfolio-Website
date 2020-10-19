@@ -44,10 +44,10 @@
 				</div>
 				<div class="main-nav js--main-nav">
 					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#technologies">Technologies</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a class="js--about-nav" href="#about">About</a></li>
+						<li><a class="js--portfolio-nav" href="#portfolio">Portfolio</a></li>
+						<li><a class="js--technologies-nav" href="#technologies">Technologies</a></li>
+						<li><a class="js--contact-nav" href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -69,7 +69,7 @@
 				</div>
 				<div class="row parent-container">
 					<div class="img-text-container small-shadow">
-						<img class="round-img big-shadow about-img wp-1" src="vendors/img/ios.png" alt="Apple Icon">
+						<img class="round-img big-shadow about-img hidden wp-1" src="vendors/img/ios.png" alt="Apple Icon">
 						<div class="about-text-box">
 							<h3>Work Experience</h3>
 							<p class="simple-text">
@@ -82,7 +82,7 @@
 						</div>
 					</div>
 					<div class="img-text-container small-shadow">
-						<img class="round-img big-shadow about-img wp-2" src="vendors/img/education.png" alt="Education Icon">
+						<img class="round-img big-shadow about-img hidden wp-2" src="vendors/img/education.png" alt="Education Icon">
 						<div class="about-text-box">
 							<h3>Education and Courses</h3>
 							<ul class="simple-text">
@@ -96,7 +96,7 @@
 						</div>
 					</div>
 					<div class="img-text-container small-shadow">
-						<img class="round-img big-shadow about-img  wp-3" src="vendors/img/hobby.png" alt="Paint and Music Icon">
+						<img class="round-img big-shadow about-img hidden wp-3" src="vendors/img/hobby.png" alt="Paint and Music Icon">
 
 						<div class="about-text-box">
 							<h3>Hobbies and Interests</h3>
@@ -126,9 +126,9 @@
 				</div>
 				<div class="portfolio-content">
 					<div class="project-container small-shadow">
-						<img class="media-box small-shadow wp-4" src="vendors/img/ibkr.png" alt="IBKR Mobile App Icon">
+						<img class="media-box small-shadow hidden wp-4" src="vendors/img/ibkr.png" alt="IBKR Mobile App Icon">
 
-						<div class="project-text-box wp-5">
+						<div class="project-text-box  wp-5 hidden">
 							<h3>Interactive Brokers- iOS App</h3>
 							<p class="simple-text">
 								I am working on the IBKR Mobile app for 2+ years. 
@@ -141,10 +141,10 @@
 						</div>
 					</div>
 					<div class="project-container small-shadow">
-						<video class="media-box small-shadow wp-6" controls>
+						<video class="media-box small-shadow hidden wp-6" controls>
 							<source src="resources/vid/mapvideo.mp4" type="video/mp4">
 						</video>
-						<div class="project-text-box wp-7">
+						<div class="project-text-box hidden wp-7">
 							<h3>Map for Gaming Application</h3>
 							<p class="simple-text">
 								We created a combat game as our final year project in BE.
@@ -158,7 +158,7 @@
 			</div>
 		</section>
 		
-		<section class="js--tech-section" id="technologies">
+		<section class="js--technologies-section" id="technologies">
 			<div class="row">
 				<div class="row section-title-container">
 					<div class="section-separator"></div>
@@ -354,17 +354,17 @@
 				</div>
 				<div class="row">
 					<ul class="social-icons">
-						<li class="wp-10"><a href="mailto:aditi.ss.patil@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
-						<li class="wp-11"><a href="https://www.facebook.com/aditi.jadoo/"><ion-icon name="logo-facebook"></ion-icon></a></li>
-						<li class="wp-12"><a href="https://www.instagram.com/art_by_adt"><ion-icon name="logo-instagram"></ion-icon></a></li>
-						<li class="wp-13"><a href="https://www.linkedin.com/in/aditi-p-79619088"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-						<li class="wp-14"><a href="https://github.com/aditisspatil"><ion-icon name="logo-github"></ion-icon></a></li>
+						<li class="hidden wp-10"><a href="mailto:aditi.ss.patil@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
+						<li class="hidden wp-11"><a href="https://www.facebook.com/aditi.jadoo/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+						<li class="hidden wp-12"><a href="https://www.instagram.com/art_by_adt"><ion-icon name="logo-instagram"></ion-icon></a></li>
+						<li class="hidden wp-13"><a href="https://www.linkedin.com/in/aditi-p-79619088"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+						<li class="hidden wp-14"><a href="https://github.com/aditisspatil"><ion-icon name="logo-github"></ion-icon></a></li>
 					</ul>
 				</div>
 			</div>
 		</section>
 		
-		<footer>
+		<footer class="js--footer">
 			<div class="row">
 				<h3>Thank you for visiting!</h3>
 				<div class="copyright-text">

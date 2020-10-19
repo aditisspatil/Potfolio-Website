@@ -130,6 +130,9 @@ h3 {
 	transition: background-color .2s;
 }
 
+.hidden {
+	visibility: hidden;
+}
 
 /* ------------------------------------------ */
 /* NAVIGATION COMPONENTS */
@@ -168,12 +171,18 @@ nav {
 	transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
 }
 
-.main-nav li a:focus,
 .main-nav li a:hover,
 .main-nav li a:active {
 	background-color: var(--inv-bg-color);
 	color: var(--inv-text-color);
 	border-bottom: 3px solid var(--inv-bg-color);
+	transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.nav-selected {
+	background-color: var(--light-text-color) !important;
+	color: var(--inv-text-color) !important;
+	border-bottom: 3px solid var(--light-text-color) !important;
 	transition: border-bottom 0.2s, background-color 0.2s, color 0.2s;
 }
 
@@ -372,6 +381,7 @@ p ion-icon,
 }
 .project-container {
 	display: flex;
+	overflow-x: hidden;
 	justify-content: center;
 	align-items: center;
 	width: 95%;

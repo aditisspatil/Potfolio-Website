@@ -4,7 +4,7 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
   new Promise((resolve, reject) => {
     const animationName = `${prefix}${animation}`;
     const node = document.querySelector(element);
-
+	node.classList.remove('hidden');
     node.classList.add(`${prefix}animated`, animationName);
 
     // When the animation ends, we clean the classes and resolve the Promise
@@ -32,9 +32,11 @@ $(document).ready(function() {
 	/* For the Sticky Navigation Bar*/
 	$('.js--sticky-nav').waypoint(function(direction) {
 		if (direction == "down") {
-			$('nav').addClass('sticky');
+			$('nav').addClass('sticky'); 
+			selectNavItem('about');
 		} else {
 			$('nav').removeClass('sticky');
+			removeNavigationSelection();
 		}		
 	}, {
 		offset: '60px;'
@@ -77,6 +79,78 @@ $(document).ready(function() {
 		}
     });
 	
+	/* Focused Navigation Item */
+	$('.js--about-section').waypoint(function(direction) { //about - page up
+		if (direction == 'up') {
+			selectNavItem('about');
+		}
+	},{  offset: '10%;' }
+	);
+	$('.js--about-section').waypoint(function(direction) { //about - page down
+		if (direction == 'down') {
+			selectNavItem('about');
+		}
+	},{  offset: '80%;' }
+	);
+	
+	$('.js--portfolio-section').waypoint(function(direction) { //portfolio - page up
+		if (direction == 'up') {
+			selectNavItem('portfolio');
+		}
+	},{ offset: '20%;' }
+	);
+	$('.js--portfolio-section').waypoint(function(direction) { //portfolio - page down
+		if (direction == 'down') {
+			selectNavItem('portfolio');
+		} else {
+			selectNavItem('about');
+		}
+	},{ offset: '80%;' }
+	);
+	
+	$('.js--technologies-section').waypoint(function(direction) { //tech - page up
+		if (direction == 'up') {
+			selectNavItem('technologies');
+		}
+	},{ offset: '20%;' }
+	);
+	$('.js--technologies-section').waypoint(function(direction) { //tech - page down
+		if (direction == 'down') {
+			selectNavItem('technologies');
+		} else {
+			selectNavItem('portfolio');
+		}
+	},{ offset: '90%;' }
+	);
+	
+	$('.js--contact-section').waypoint(function(direction) { //contact - page up
+		if (direction == 'up') {
+			selectNavItem('contact');
+		}
+	},{ offset: '10%;' }
+	);
+	$('.js--contact-section').waypoint(function(direction) { //contact - page down
+		if (direction == 'down') {
+			if ( $('.js--technologies-section').offset().top < $(window).scrollTop() ) {
+				selectNavItem('contact');
+			}
+		} else {
+			selectNavItem('technologies');
+		}
+	},{ offset: '80%;'}
+	);
+	
+	$('.js--contact-section').waypoint(function(direction) { //contact - page down
+		if (direction == 'down') {
+			if ( $('.js--technologies-section').offset().top < $(window).scrollTop() + 40 ) {
+				selectNavItem('contact');
+			}
+		} else {
+			selectNavItem('technologies');
+		}
+	},{ offset: '60%;'}
+	);
+	
 	/* Button Clicks */
 	$('.js--tech-button').click(function() {
 		var techBox = $('.js--tech-box');
@@ -99,64 +173,44 @@ $(document).ready(function() {
 	
 	//Roll in 
 	$('.wp-1').waypoint(function(direction){
+		$('.wp-1').removeClass('hidden');
 		$('.wp-1').addClass('animate__animated animate__rollIn');
 	},{ offset: '80%' }
 	);
 	
 	$('.wp-2').waypoint(function(direction){
+		$('.wp-2').removeClass('hidden');
 		$('.wp-2').addClass('animate__animated animate__rollIn');
 	},{ offset: '80%' }
 	);
 	
 	$('.wp-3').waypoint(function(direction){
+		$('.wp-3').removeClass('hidden');
 		$('.wp-3').addClass('animate__animated animate__rollIn');
 	},{ offset: '80%' }
 	);
 	
-	$('.wp-1').waypoint(function(direction){
-		if (direction == 'down') {
-			animateCSS('.wp-1', 'rollOut');
-		}
-	},{ offset: '10%' }
-	);
-	
-	// Roll out
-	$('.wp-1').waypoint(function(direction){
-		if (direction == 'down') {
-			animateCSS('.wp-1', 'rollOut');
-		}
-	},{ offset: '10%' }
-	);
-	$('.wp-2').waypoint(function(direction){
-		if (direction == 'down') {
-			animateCSS('.wp-2', 'rollOut');
-		}
-	},{ offset: '10%' }
-	);
-	$('.wp-3').waypoint(function(direction){
-		if (direction == 'down') {
-			animateCSS('.wp-3', 'rollOut');
-		}
-	},{ offset: '10%' }
-	);
-	
 	//Fade in Left-Right
 	$('.wp-4').waypoint(function(direction){
+		$('.wp-4').removeClass('hidden');
 		$('.wp-4').addClass('animate__animated animate__fadeInLeft');
 	},{ offset: '80%'
 	});
 	
 	$('.wp-5').waypoint(function(direction){
+		$('.wp-5').removeClass('hidden');
 		$('.wp-5').addClass('animate__animated animate__fadeInRight');
 	},{ offset: '80%'
 	});
 	
 	$('.wp-6').waypoint(function(direction){
+		$('.wp-6').removeClass('hidden');
 		$('.wp-6').addClass('animate__animated animate__fadeInLeft');
 	},{ offset: '80%'
 	});
 	
 	$('.wp-7').waypoint(function(direction){
+		$('.wp-7').removeClass('hidden');
 		$('.wp-7').addClass('animate__animated animate__fadeInRight');
 	},{ offset: '80%'
 	});
@@ -168,27 +222,29 @@ $(document).ready(function() {
 	
 	// Nested Animation
 	$('.wp-10').waypoint(function(direction){
-		var delay = 150;
-		
-		setTimeout(function() {
-				animateSocialIcons('.wp-10');
-			}, delay
-		);		setTimeout(function() {
-				animateSocialIcons('.wp-11');
-			}, 2*delay
-		);
-		setTimeout(function() {
-				animateSocialIcons('.wp-12');
-			}, 3*delay
-		);
-		setTimeout(function() {
-				animateSocialIcons('.wp-13');
-			}, 4*delay
-		);
-		setTimeout(function() {
-				animateSocialIcons('.wp-14');
-			}, 5*delay
-		);
+		if (direction == 'down') {
+			var delay = 150;
+			
+			setTimeout(function() {
+					animateSocialIcons('.wp-10');
+				}, delay
+			);		setTimeout(function() {
+					animateSocialIcons('.wp-11');
+				}, 2*delay
+			);
+			setTimeout(function() {
+					animateSocialIcons('.wp-12');
+				}, 3*delay
+			);
+			setTimeout(function() {
+					animateSocialIcons('.wp-13');
+				}, 4*delay
+			);
+			setTimeout(function() {
+					animateSocialIcons('.wp-14');
+				}, 5*delay
+			);
+		}
 	},{ offset: '80%'
 	});
 	
@@ -196,6 +252,17 @@ $(document).ready(function() {
 		var animation = 'fadeInUp';
 		animateCSS(element, animation);
 	}
+	
+	$('.wp-10').waypoint(function(direction){
+		if (direction == 'up') {
+			$('.wp-10').addClass('hidden');
+			$('.wp-11').addClass('hidden');
+			$('.wp-12').addClass('hidden');
+			$('.wp-13').addClass('hidden');
+			$('.wp-14').addClass('hidden');
+		}
+	},{ offset: '95%' }
+	);
 
 });	
 
@@ -211,3 +278,33 @@ function closeMobileNav() {
 	}
 }
 
+function selectNavItem(navItem) {
+	removeNavigationSelection();
+	
+	if (navItem == 'about') {
+		$('.js--about-nav').addClass('nav-selected');
+	}
+	else if (navItem == 'portfolio') {
+		$('.js--portfolio-nav').addClass('nav-selected');
+	}
+	else if (navItem == 'technologies') {
+		$('.js--technologies-nav').addClass('nav-selected');
+	}
+	else if (navItem == 'contact') {
+		$('.js--contact-nav').addClass('nav-selected');
+	}
+}
+
+function removeNavigationSelection () {
+	$('.js--about-nav').removeClass('nav-selected');
+	$('.js--portfolio-nav').removeClass('nav-selected');
+	$('.js--technologies-nav').removeClass('nav-selected');
+	$('.js--contact-nav').removeClass('nav-selected');
+}
+
+function isSectionInFocus(elem) {
+    var top = $(window).scrollTop();
+    var bottom = docViewTop + $(window).height() *0.7;
+    var elemTop = $(elem).offset().top;
+    return ((elemTop <= bottom) && (elemTop >= top));
+  }
