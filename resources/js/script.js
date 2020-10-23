@@ -43,7 +43,7 @@ $(document).ready(function() {
 	});
 	
 	/* Navigation Anchors */
-	$('a[href^="#"]').click(function() {
+	$('a[href^="#"]').mousedown(function() {
         var target = $(this.hash);
         $('html, body').stop().animate({
             scrollTop:  target.offset().top - 40
@@ -54,9 +54,20 @@ $(document).ready(function() {
 		return false;
     });
 	
+	$('a[href^="#"]').mouseup(function() {
+        var target = $(this.hash);
+		target.blur();
+		
+		setTimeout(function() {
+				selectNavItem(target.attr('id'));
+			}, 600
+		);
+	});
+	
 	/* Mobile Navigation */
 	$('.js--nav-icon').mouseup(function(e) {
 		var nav = $('.js--main-nav');
+		
 		
 		if ( nav.hasClass('js--nav-open') && nav.width() > 0 ) { //Already opened Nav
 			closeMobileNav();
@@ -65,7 +76,7 @@ $(document).ready(function() {
 			nav.animate({width: 'toggle'}, 
 			200,
 			function() {
-					nav.addClass('js--nav-open');
+				nav.addClass('js--nav-open');
 			});
 		}
 
@@ -120,35 +131,26 @@ $(document).ready(function() {
 		} else {
 			selectNavItem('portfolio');
 		}
-	},{ offset: '90%;' }
+	},{ offset: '80%;' }
 	);
 	
 	$('.js--contact-section').waypoint(function(direction) { //contact - page up
 		if (direction == 'up') {
 			selectNavItem('contact');
 		}
-	},{ offset: '10%;' }
+	},{ offset: '20%;' }
 	);
 	$('.js--contact-section').waypoint(function(direction) { //contact - page down
-		if (direction == 'down') {
-			if ( $('.js--technologies-section').offset().top < $(window).scrollTop() ) {
-				selectNavItem('contact');
-			}
-		} else {
-			selectNavItem('technologies');
-		}
+		selectContact(direction);
+	},{ offset: '60%;'}
+	);
+	$('.js--contact-section').waypoint(function(direction) { //contact - page down
+		selectContact(direction);
 	},{ offset: '80%;'}
 	);
-	
 	$('.js--contact-section').waypoint(function(direction) { //contact - page down
-		if (direction == 'down') {
-			if ( $('.js--technologies-section').offset().top < $(window).scrollTop() + 40 ) {
-				selectNavItem('contact');
-			}
-		} else {
-			selectNavItem('technologies');
-		}
-	},{ offset: '60%;'}
+		selectContact(direction);
+	},{ offset: '90%;'}
 	);
 	
 	/* Button Clicks */
@@ -275,6 +277,17 @@ function closeMobileNav() {
 			nav.removeClass('js--nav-open');
 		}
 		);	
+	}
+}
+
+function selectContact(direction) {
+	if (direction == 'down') {
+		var contactBottom = $('.js--contact-section').offset().top + $('.js--contact-section').innerHeight();
+		var bottom = $(window).scrollTop() + $(window).height();
+
+		if ( contactBottom <= bottom ) {
+			selectNavItem('contact');
+		}
 	}
 }
 
