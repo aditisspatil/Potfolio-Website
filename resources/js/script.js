@@ -205,6 +205,18 @@ $(document).ready(function() {
 	},{ offset: '80%'
 	});
 	
+	$('.wp-15').waypoint(function(direction){
+		$('.wp-15').removeClass('hidden');
+		$('.wp-15').addClass('animate__animated animate__fadeInLeft');
+	},{ offset: '80%'
+	});
+	
+	$('.wp-16').waypoint(function(direction){
+		$('.wp-16').removeClass('hidden');
+		$('.wp-16').addClass('animate__animated animate__fadeInRight');
+	},{ offset: '80%'
+	});
+	
 	$('.wp-6').waypoint(function(direction){
 		$('.wp-6').removeClass('hidden');
 		$('.wp-6').addClass('animate__animated animate__fadeInLeft');
