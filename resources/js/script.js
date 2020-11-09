@@ -229,6 +229,12 @@ $(document).ready(function() {
 	},{ offset: '80%'
 	});
 	
+	$('.wp-17').waypoint(function(direction){
+		$('.wp-17').removeClass('hidden');
+		$('.wp-17').addClass('animate__animated animate__fadeInRight');
+	},{ offset: '80%'
+	});
+	
 	$('.wp-9').waypoint(function(direction){
 		$('.wp-9').addClass('animate__animated animate__fadeIn');
 	},{ offset: '50%'

@@ -400,8 +400,13 @@ p ion-icon,
 .project-text-box {
 	display: inline-block;
 	float: center;
-	text-align: center ;
+	text-align: center;
 	margin-left: 5%;
+}
+
+.papers-box {
+	text-align: left ;
+	width: 80%;
 }
 
 /* ----- Technology Section ----- */
