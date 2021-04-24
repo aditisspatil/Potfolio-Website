@@ -397,6 +397,14 @@ p ion-icon,
 	border-radius: 10px;
 }
 
+.media-box iframe {
+	display: flex;
+	position: relative;
+	text-align: center;
+	margin: auto; /* 16:9 Aspect Ratio */
+	border-radius: 10px;
+}
+
 .project-text-box {
 	display: inline-block;
 	float: center;

@@ -23,12 +23,25 @@ $(document).ready(function() {
 	
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	
+	//update iframe size
+	let iframe = document.getElementById( 'iframe1' )
+	let image = document.getElementById( 'image' )
+	iframe.width = image.height*16/9;
+	iframe.height = image.height;
+	
 	window.addEventListener('resize', () => {
 		let vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		
+		//update iframe size
+		let iframe = document.getElementById( 'iframe1' )
+		let image = document.getElementById( 'image' )
+		iframe.width = image.height*16/9;
+		iframe.height = image.height;
+		
 	});
 
-	
 	/* For the Sticky Navigation Bar*/
 	$('.js--sticky-nav').waypoint(function(direction) {
 		if (direction == "down") {
@@ -338,4 +351,6 @@ function isSectionInFocus(elem) {
     var bottom = docViewTop + $(window).height() *0.7;
     var elemTop = $(elem).offset().top;
     return ((elemTop <= bottom) && (elemTop >= top));
-  }
+}
+  
+  
