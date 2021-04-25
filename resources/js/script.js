@@ -232,6 +232,10 @@ $(document).ready(function() {
 	
 	$('.wp-6').waypoint(function(direction){
 		$('.wp-6').removeClass('hidden');
+		let iframe = document.getElementById( 'iframe1' )
+		let image = document.getElementById( 'image' )
+		iframe.width = image.height*16/9;
+		iframe.height = image.height;
 		$('.wp-6').addClass('animate__animated animate__fadeInLeft');
 	},{ offset: '80%'
 	});
